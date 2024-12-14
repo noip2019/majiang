@@ -9,7 +9,7 @@ if __name__ == '__main__':
         'model_pool_size': 20,
         'model_pool_name': 'model-pool',
         'num_actors': 24,
-        'episodes_per_actor': 1000,
+        'episodes_per_actor': 10000,
         'gamma': 0.98,
         'lambda': 0.95,
         'min_sample': 200,
@@ -21,7 +21,7 @@ if __name__ == '__main__':
         'entropy_coeff': 0.01,
         'device': 'cuda',
         'ckpt_save_interval': 300,
-        'ckpt_save_path': 'C:\Users\omen\Documents\WeChat Files\wxid_44bmfpsyavhv22\FileStorage\File\2024-11\国标麻将强化学习代码\checkpoint'
+        'ckpt_save_path': '/home/xiazhongyu/majiang/model'
     }
     
     replay_buffer = ReplayBuffer(config['replay_buffer_size'], config['replay_buffer_episode'])

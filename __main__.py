@@ -18,7 +18,7 @@ import sys
 
 if __name__ == '__main__':
     model = CNNModel()
-    data_dir = '/data/testrl.pt'
+    data_dir = '/data/modelmodel_70200.pt'
     model.load_state_dict(torch.load(data_dir, map_location = torch.device('cpu')))
     model.train(False)
     input() # 1
